@@ -20,7 +20,7 @@ export async function getServerSideProps(context: any) {
   if (postId) {
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/comments?postId=${postId}`,
+        `https://your-food-is-good2-0.vercel.app/api/comments?postId=${postId}`,
         {
           withCredentials: true,
           headers: {

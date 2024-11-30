@@ -46,7 +46,7 @@ export default function YourPostings({ initialPosts }: { initialPosts: any[] }) 
 export async function getServerSideProps(context: any) {
   try {
     // API call to fetch posts for authenticated user
-    const response = await axios.get(`http://localhost:3000/api/verifyUser`, {
+    const response = await axios.get(`https://your-food-is-good2-0.vercel.app//api/verifyUser`, {
       headers: {
         Cookie: context.req.headers.cookie || "",
       },

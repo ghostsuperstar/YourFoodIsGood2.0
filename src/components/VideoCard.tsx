@@ -81,7 +81,7 @@ export function VideoCard(props: Video) {
 
   const confirmDelete = async (postId: number) => {
     try {
-      const res = await fetch(`http://localhost:3000/api/verifyUser?id=${postId}`, {
+      const res = await fetch(`https://your-food-is-good2-0.vercel.app//api/verifyUser?id=${postId}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',

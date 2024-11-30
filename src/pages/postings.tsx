@@ -45,7 +45,7 @@ export default function Postings({ initialPosts }: { initialPosts: any[] }) {
 
 export async function getServerSideProps(context: any) {
   try {
-    const response = await axios.get(`http://localhost:3000/api/posts`, {
+    const response = await axios.get(`https://your-food-is-good2-0.vercel.app//api/posts`, {
       headers: {
         Cookie: context.req.headers.cookie || "",
       },
